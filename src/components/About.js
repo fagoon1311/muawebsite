@@ -3,13 +3,13 @@ import dp from '../assets/images/simran.jpg'
 
 const About = () => {
   return (
-    <div className='bg-slate-100 absolute w-[100vw] flex justify-center'>
+    <div className='bg-slate-100  w-[100vw] flex justify-center'>
         <div className='relative bg-white p-4 w-[90vw] flex flex-col bottom-10 border border-slate-100 shadow-2xl'>
             <div>
                 <h1 className='font-Poppins text-2xl font-semibold mx-10'>About Me</h1>
             </div>
             <div className='flex flex-row my-4'>
-                <img src={dp} className='h-[20rem] w-[15rem] mx-10'></img>
+                <img src={dp} alt = 'asd' className='h-[20rem] w-[15rem] mx-10'></img>
                 <p className='font-Poppins my-16'>
                     Welcome to my world of beauty! 
                     <br></br>
