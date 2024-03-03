@@ -20,7 +20,7 @@ const Card = ({ info }) => {
             />
             {
                 hover && 
-                <h1 className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-Poppins font-bold text-3xl text-white'>{text}</h1>
+                <h1 className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-Poppins font-bold text-3xl text-white'>{text}<br></br><p className='text-sm text-pink-500'>Discover</p></h1>  
             }
         </div>
     );
