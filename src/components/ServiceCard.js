@@ -3,7 +3,7 @@ import hairmakeup from '../assets/images/hairmakeup.jpg'
 import bridal from '../assets/images/bridal.jpg'
 import eyemakeup from '../assets/images/eye_makeup.jpg'
 import { useState } from 'react'
-
+import { Link } from 'react-router-dom'
 
 const Card = ({ info }) => {
     const {image, text} = info
@@ -20,7 +20,7 @@ const Card = ({ info }) => {
             />
             {
                 hover && 
-                <h1 className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-Poppins font-bold text-3xl text-white'>{text}<br></br><p className='text-sm text-pink-500'>Discover</p></h1>  
+                <h1 className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-Poppins font-bold text-3xl text-white'>{text}<br></br><Link to="/discover"><p className='text-sm text-pink-500'>Discover</p></Link></h1>  
             }
         </div>
     );
@@ -36,7 +36,8 @@ const ServiceCard = () => {
         {
             image:bridal,
             text:"Bridal"
-        }, {
+        }, 
+        {
             image:eyemakeup,
             text:"Eye Makeup"
         }
@@ -47,7 +48,7 @@ const ServiceCard = () => {
     <div className='flex flex-row justify-evenly my-10'>
         {/* {<Card info={serviceData[1]}/>} */}
         {
-            serviceData.map((data, index) => <Card  key={index} info={data}/>)
+            serviceData.map((data, index) => <Link to="/discover"><Card  key={index} info={data}/></Link>)
         }
     </div>
   )
