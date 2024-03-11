@@ -2,6 +2,7 @@ import React from 'react'
 import Cover from '../components/Cover';
 import Services from '../components/Services';
 import About from '../components/About';
+import Works from './Works';
 
 
 const MainPage = () => {
@@ -10,6 +11,7 @@ const MainPage = () => {
       <Cover />
       <About />
       <Services />
+      <Works />
     </div>
   )
 }
