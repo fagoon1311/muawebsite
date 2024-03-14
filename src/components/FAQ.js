@@ -1,17 +1,19 @@
 import React, { useState } from 'react'
+import { ChevronDown, ChevronUp } from 'lucide-react';
+
 
 
 const FaqCard = ({title, answer, isVisible, setIsVisible}) =>{
     return (
-        <div className=''>
-            <span>{title}</span>
+        <div className='bg-slate-100 m-2 p-2 w-[50rem]'>
+            <span className='font-Poppins'>{title}</span>
             <span>
               {
-                isVisible&&<p>{answer}</p>
+                isVisible&&<p className='font-Poppins'>{answer}</p>
               }
             </span>
             <button onClick={setIsVisible}>
-                {isVisible ? 'Hide' : 'Show'}
+                {isVisible ? <ChevronUp color="#ff0088" /> : <ChevronDown color="#ff0088" />}
             </button>
             
         </div>
@@ -20,8 +22,8 @@ const FaqCard = ({title, answer, isVisible, setIsVisible}) =>{
 
 const FAQ = () => {
   const [visibleSection, setVisibleSection] = useState("")
-  return (
-    <div className='flex flex-col'>
+  return (  
+    <div className='flex flex-col p-2 items-center'>
       <FaqCard title={"Do you offer makeup trials?"}
         answer={"Yes, I offer makeup trials for clients who are preparing for special events such as weddings, proms, or photo shoots. During the trial, we can discuss your desired look, try out different styles, and make any adjustments to ensure you feel confident and beautiful on your big day."}
         isVisible={visibleSection === 'Trials'}
