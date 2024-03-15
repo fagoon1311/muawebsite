@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -7,7 +8,7 @@ const Header = () => {
         <div className='col-span-9 flex justify-end items-center'>
             <ul className='flex font-Poppins '>
                 <li className='px-10 py-3'>About</li>
-                <li className='px-10 py-3'>Services</li>
+                <Link to='/discover'><li className='px-10 py-3'>Services</li></Link>
                 <li className='px-10 py-3'>Works</li>
                 <li className='px-10 py-3'>Contact</li>
             </ul>
