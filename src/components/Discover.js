@@ -26,23 +26,24 @@ const Discover = () => {
             </div>
         </div>
 
-        <div className='flex justify-between gap-10 mt-24 bg-slate-100'>
-            <div className='w-1/3 flex flex-col items-center p-2 m-2'>
+        <div className='flex justify-between gap-10 mt-24 bg-slate-100 p-2'>
+            <div className='w-1/3 flex flex-col items-center p-2 m-2 shadow-xl rounded-xl'>
                 <img src={bride} alt='MAC Makeup' className='rounded-lg h-[20rem] w-[20rem]'></img>
-                <h1 className='font-Poppins text-xl font-semibold'>Bridal Makeup</h1>
-                <p className='font-Poppins'>Elevate your beauty experience with our tailored bridal makeup services. From flawless complexions to accentuated features, we specialize in creating stunning bridal looks that enhance your natural beauty and reflect your individual style. Trust us to make your special day even more memorable with our meticulous attention to detail and expert artistry.</p>
+                <h1 className='font-Poppins text-xl font-semibold p-2'>Bridal Makeup</h1>
+                <p className='font-Poppins p-2'>Elevate your beauty experience with our tailored bridal makeup services. From flawless complexions to accentuated features, we specialize in creating stunning bridal looks that enhance your natural beauty and reflect your individual style. Trust us to make your special day even more memorable with our meticulous attention to detail and expert artistry.</p>
             </div>
-            <div className='w-1/3 flex flex-col items-center p-2 m-2'>
-                <img src={eye} alt='eyemakeup'className='rounded-lg h-[20rem] w-[20rem]'></img>
-                <h1 className='font-Poppins text-xl font-semibold'>Eye Makeup</h1>
-                <p className='font-Poppins'>Transform your look with our expertly crafted eye makeup services. Whether you desire a subtle enhancement or a bold statement, our skilled artists will create mesmerizing eye looks tailored to your unique style and preferences. From classic elegance to avant-garde creativity, let us accentuate your eyes and captivate with every glance.</p>
+            <div className='w-1/3 flex flex-col items-center p-2 m-2 shadow-xl rounded-xl'>
+                <img src={eye} alt='eyemakeup' className='rounded-lg h-[20rem] w-[20rem]'></img>
+                <h1 className='font-Poppins text-xl font-semibold p-2 '>Eye Makeup</h1>
+                <p className='font-Poppins p-2'>Transform your look with our expertly crafted eye makeup services. Whether you desire a subtle enhancement or a bold statement, our skilled artists will create mesmerizing eye looks tailored to your unique style and preferences. From classic elegance to avant-garde creativity, let us accentuate your eyes and captivate with every glance.</p>
             </div>
-            <div  className='w-1/3 flex flex-col items-center p-2 m-2'>
+            <div  className='w-1/3 flex flex-col items-center p-2 m-2 shadow-xl rounded-xl'>
                 <img src={effect} alt='effect' className='rounded-lg h-[20rem] w-[20rem]'></img>
-                <h1 className='font-Poppins text-xl font-semibold'>Effect Makeup</h1>
-                <p className='font-Poppins'>Experience the magic of cosplay makeup with our specialized services. Unleash your imagination and bring your favorite characters to life with stunning transformations tailored to conventions, photoshoots, or special events. From intricate details to dramatic effects, our skilled artists will ensure you stand out in the crowd and embody the essence of your chosen character.</p>
+                <h1 className='font-Poppins text-xl font-semibold p-2'>Effect Makeup</h1>
+                <p className='font-Poppins p-2'>Experience the magic of cosplay makeup with our specialized services. Unleash your imagination and bring your favorite characters to life with stunning transformations tailored to conventions, photoshoots, or special events. From intricate details to dramatic effects, our skilled artists will ensure you stand out in the crowd and embody the essence of your chosen character.</p>
             </div>
         </div>
+
 
 
         <div className='mt- mt-24'>
