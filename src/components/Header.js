@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
-    <div className='grid grid-cols-12 grid-flow-col bg-slate-100'>
+    <div className='grid grid-cols-12 grid-flow-col bg-gradient-to-b from-slate-100 via-slate-100 to-white'>
         <div className='col-span-3 px-2 py-2 font-DancingScript font-extrabold text-4xl'>By - "Simran Panchal"</div>
         <div className='col-span-9 flex justify-end items-center'>
             <ul className='flex font-Poppins '>
