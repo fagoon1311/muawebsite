@@ -5,7 +5,7 @@ import { ChevronDown, ChevronUp } from 'lucide-react';
 
 const FaqCard = ({title, answer, isVisible, setIsVisible}) =>{
     return (
-        <div className={` m-2 p-2 w-[50rem] flex justify-between rounded-xl ${isVisible?"bg-pink-50":" bg-slate-100"}`}> 
+        <div className={` m-2 p-2 w-[50rem] flex justify-between rounded-xl ${isVisible?"bg-pink-50":" bg-slate-100"}`} onClick={setIsVisible}> 
             <div className='flex flex-col'>
             <span className={`font-Poppins text-xl ${isVisible ? "font-semibold" : ""}`}>{title}</span>
             <span>{isVisible&&<p className='font-Poppins text-sm'>{answer}</p>}</span>
